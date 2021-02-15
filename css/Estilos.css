@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap');
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #757F9A;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #D7DDE8, #757F9A);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+header {
+    background-color: #75cfb8;
+    display: flex;
+    max-width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    width: 95%;
+}
+
+.logo {
+    background-color: #ffc75f;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+
+.logo h1 {
+    font-size: 2.5rem;
+}
+
+.menu {
+    display: flex;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 0;
+}
+
+.menu li {
+    list-style: none;
+    padding-top: 5px;
+    height: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #fff;
+    transition: all ease 0.4s;
+}
+
+.menu a:hover {
+    background: #fff;
+    color: #75cfb8;
+    border-radius: 0.5rem;
+}
+
+.container-general {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container-principal_iconos {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.item-icono {
+    text-align: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.item-icono i {
+    background-color: #75cfb8;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.8rem;
+    border-radius: 50%;
+    transition: all ease 0.3s;
+}
+
+.item-icono p {
+    font-size: 1.10rem;
+}
+
+.item-icono i:hover {
+    background: #fff;
+    color: #75cfb8;
+}
+
+.container-seccion {
+    display: flex;
+    background-color: #ccf2f4;
+    margin-bottom: 5rem;
+    justify-content: flex-start;
+    border-radius: 2rem;
+    max-width: 100%;
+}
+
+.container-seccion2 {
+    display: flex;
+    background-color: #ccf2f4;
+    margin-bottom: 2rem;
+    justify-content: flex-end;
+    border-radius: 2rem;
+}
+
+.seccion-img {
+    max-width: 40%;
+    padding-right: 1.5rem;
+    max-height: 222px;
+}
+
+.seccion-img img {
+    width: 100%;
+    border-radius: 2rem;
+    height: 222px;
+}
+
+.seccion-img2 {
+    max-width: 40%;
+    padding-left: 1.5rem;
+    max-height: 222px;
+}
+
+.seccion-img2 img {
+    width: 100%;
+    border-radius: 2rem;
+    height: 222px;
+}
+
+.seccion-texto {
+    text-align: center;
+    max-width: 57%;
+    ;
+}
+
+.seccion-texto h3 {
+    font-size: 2rem;
+    width: 100%;
+}
+
+.seccion-texto p {
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: justify;
+    margin: 0;
+}
+
+.container-galeria {
+    margin-top: 6rem;
+}
+
+.servicios-titulo {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.galeria-titulo {
+    text-align: center;
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.galeria-grid {
+    width: 100%;
+    max-width: 1280px;
+    text-align: center;
+}
+
+.item-galeria img {
+    width: 100%;
+}
+
+.item-galeria {
+    box-shadow: 0 10px 10px rgba(22, 22, 22, 0.63);
+    transition: all ease 0.4s;
+}
+
+.item-galeria:hover {
+    transform: translateY(-1rem);
+}
+
+#cerrar {
+    position: absolute;
+    z-index: 10;
+    right: 2rem;
+    top: 0.6rem;
+}
+
+#cerrar i {
+    color: #eb5e0b;
+    font-size: 1.5rem;
+    padding: 0.6rem;
+    transition: all ease 0.3s;
+}
+
+#cerrar i:hover {
+    background: #fff;
+    border-radius: 50%;
+}
+
+.ocultar-galery {
+    position: fixed;
+    top: 1rem;
+    left: 5rem;
+}
+
+.slider-galeria {
+    width: 900%;
+    max-width: 900px;
+    max-height: 610px;
+    position: relative;
+    overflow: hidden;
+    display: none;
+    box-shadow: 0 0 0 10px #fff;
+    border-radius: 10px;
+}
+
+.slider {
+    display: flex;
+    width: 400%;
+    height: 400%;
+    margin-left: -100%;
+}
+
+.slider__section {
+    width: 100%;
+}
+
+.slider__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider__btn {
+    position: absolute;
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider__btn:hover {
+    background: #eb5e0b;
+}
+
+.slider__btn--left {
+    left: 10px;
+}
+
+.slider__btn--rigth {
+    right: 10px;
+}
+
+footer {
+    background: #98ded9;
+    margin-top: 6rem;
+    max-width: 100%;
+}
+
+.footer-all {
+    width: 92%;
+    padding: 2.5rem;
+}
+
+.Contacto {
+    width: 100%;
+    display: flex;
+    font-size: 0.1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Colum1 {
+    max-width: 400px;
+}
+
+.Colum1 h1 {
+    font-size: 2rem;
+}
+
+.row {
+    margin-top: 20px;
+    display: flex;
+}
+
+.row i {
+    width: 36px;
+    height: 36px;
+    font-size: 1.4rem;
+    padding-top: 10px;
+    padding-right: 0;
+}
+
+.row label {
+    margin-left: 20px;
+    max-width: 355px;
+    font-size: 1.2rem;
+}
+
+.Colum2 {
+    max-width: 400px;
+    margin-top: 1rem;
+}
+
+.Colum2 h1 {
+    font-size: 2rem;
+}
+
+.Autor {
+    width: 100%;
+    background: #101010;
+}
+
+.Autor-centrar {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+}
+
+.copy {
+    color: #c7c7c7;
+    padding: 0.5rem;
+}
+
+.Redes i {
+    padding: 0.7rem;
+    color: #000;
+    background: #fff;
+    transition: all ease 0.3s;
+}
+
+.Redes i:hover {
+    border-radius: 50%;
+}
+
+@media (max-whidth: 750px) {
+    .wrapper {
+        width: 100%;
+        flex-direction: column;
+    }
+    header {
+        flex-wrap: wrap;
+        flex-direction: column;
+        max-height: 120px;
+    }
+    .container-seccion {
+        margin: 0;
+        width: 100%;
+    }
+}
+
+@media (max-whidth: 820px) {
+    .footer-all {
+        flex-direction: column;
+    }
+    .container-principal_iconos {
+        flex-direction: column;
+    }
+    .Contacto {
+        flex-direction: column;
+    }
+    .Autor-centrar {
+        flex-direction: column;
+    }
+}

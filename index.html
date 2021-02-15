@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Iconos-->
+    <script src="https://kit.fontawesome.com/712575d4a5.js" crossorigin="anonymous"></script>
+    <!--Enlaces-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="https://fontawesome.com/">
+    <link rel="stylesheet" href="splide-2.4.21/dist/css/themes/splide-sea-green.min.css">
+    <link rel="stylesheet" href="css/Estilos.css">
+    <title>Ventanas y Aluminio</title>
+</head>
+
+<body>
+    <header>
+        <nav class="wrapper">
+            <div class="logo">
+                <h1>WindowsGrek</h1>
+            </div>
+            <ul class="menu">
+                <li><a href="#" class="opmenu">Inicio</a></li>
+                <li><a href="#" class="opmenu">Galeria</a></li>
+                <li><a href="#" class="opmenu">Contratos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--slider-->
+    <div class="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide"><img src="img/slider1.jpg" alt=""></li>
+                <li class="splide__slide"><img src="img/slider2.jpg" alt=""></li>
+                <li class="splide__slide"><img src="img/slider3.jpg" alt=""></li>
+                <li class="splide__slide"><img src="img/slider4.jpg" alt=""></li>
+            </ul>
+        </div>
+        <!--Barra de progreso-->
+        <div class="splide__progress">
+            <div class="splide__progress__bar">
+            </div>
+        </div>
+    </div>
+    <!--Contenido principal-->
+    <main class="container-general">
+        <div class="container-principal">
+            <div class="container-principal_iconos">
+                <div class="item-icono">
+                    <i class="fas fa-hammer"></i>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur corporis, atque laborum assumenda tenetur beatae quos delectus facere rem obcaecati ullam, consequatur quaerat sunt voluptatum nihil! Quidem voluptate nihil perferendis?
+                    </p>
+                </div>
+                <div class="item-icono">
+                    <i class="fas fa-tools"></i>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse cum soluta sint saepe expedita fuga illum odio, recusandae vel eaque. Illo id consequatur natus tempora? Quam, similique porro. Iure, impedit?
+                    </p>
+                </div>
+                <div class="item-icono">
+                    <i class="fas fa-headset"></i>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum accusamus, ipsa temporibus dolorum dicta illo expedita nesciunt eos rerum nemo molestiae accusantium maiores architecto harum quasi voluptas iste nostrum aut?
+                    </p>
+                </div>
+            </div>
+            <div class="servicios-titulo">
+                <h1>Servicios</h1>
+            </div>
+            <div class="container-seccion">
+                <div class="seccion-img">
+                    <img src="img/imgInstalacion.jpg" alt="">
+                </div>
+                <div class="seccion-texto">
+                    <h3>Instalacion</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis id est veniam reiciendis animi asperiores eius, soluta alias quia suscipit cupiditate dolorum numquam tempora sequi nobis, dolores provident doloremque laboriosam.
+                    </p>
+                </div>
+            </div>
+            <div class="container-seccion2">
+                <div class="seccion-texto">
+                    <h3>Mantenimiento</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla voluptate recusandae blanditiis soluta, maiores at accusantium. Omnis dignissimos delectus aspernatur exercitationem voluptatibus necessitatibus unde. Eos minima cupiditate alias nemo et.
+                    </p>
+                </div>
+                <div class="seccion-img2">
+                    <img src="img/imgMantenimiento.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <section class="container-galeria">
+            <div class="galeria-titulo">
+                <h1>Galeria</h1>
+            </div>
+            <div class="galeria-grid">
+                <div class="item-galeria">
+                    <a href="javascript:llamar()"><img src="img/itemGaleria.png" alt=""></a>
+                </div>
+                <div class="item-galeria">
+                    <img src="img/itemGaleria.png" alt="">
+                </div>
+                <div class="item-galeria">
+                    <img src="img/itemGaleria.png" alt="">
+                </div>
+                <div class="item-galeria">
+                    <img src="img/itemGaleria.png" alt="">
+                </div>
+                <div class="item-galeria">
+                    <img src="img/itemGaleria.png" alt="">
+                </div>
+                <div class="item-galeria">
+                    <img src="img/itemGaleria.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!--contenedor de slider segundario-->
+        <section class="ocultar-galery">
+            <div class="slider-galeria" id="galery">
+                <div class="slider" id="slider">
+                    <div id="cerrar">
+                        <a href="javascript:cerrar()"><i class="fas fa-times"></i></a>
+                    </div>
+                    <div class="slider__section">
+                        <img src="img/slider1.jpg" alt="" class="slider__img">
+                    </div>
+                    <div class="slider__section">
+                        <img src="img/slider2.jpg" alt="" class="slider__img">
+                    </div>
+                    <div class="slider__section">
+                        <img src="img/slider3.jpg" alt="" class="slider__img">
+                    </div>
+                    <div class="slider__section">
+                        <img src="img/slider4.jpg" alt="" class="slider__img">
+                    </div>
+                </div>
+                <div class="slider__btn slider__btn--rigth" id="btn-rigth">&#62;</div>
+                <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-all">
+            <div class="Contacto">
+                <div class="Colum1">
+                    <h1>Informacion de Contacto</h1>
+                    <div class="row">
+                        <i class="far fa-envelope"></i>
+                        <label>miempresa@mismtp.com</label>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-home"></i>
+                        <label>Av.Livertad Entre Ramon Estupiñan y Manabi (Frente a Coop.Policia Nacional)</label>
+                    </div>
+                </div>
+                <div class="Colum2">
+                    <h1>Ubicanos 📲</h1>
+                    <div class="row2">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498.6550288844603!2d-79.65421279917165!3d0.9753573641820754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fd4bc06274a2bb7%3A0xa5e5d1502d5cf6c7!2sImportadora%20Metalum!5e0!3m2!1ses!2sec!4v1612979772504!5m2!1ses!2sec"
+                            width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Autor">
+            <div class="Autor-centrar">
+                <div class="copy">
+                    © 2021 Copyright - Todos Los Derechos Reservados
+                </div>
+                <div class="Redes">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Llamando archivos js-->
+    <script src="js/main.js"></script>
+    <script src="splide-2.4.21/dist/js/splide.js"></script>
+    <!--aplicando el slider-->
+    <script>
+        new Splide('.splide').mount();
+    </script>
+</body>
+
+</html>
